@@ -93,10 +93,10 @@
 // - retornará o valor somado acrescido de 10%.
 // DICA: para isso, você precisará percorrer tanto o objeto da chave `food` quanto o objeto da chave `drink`.
 
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#syntax
+// https://www.w3schools.com/js/js_this.asp
+// https://desenvolvimentoparaweb.com/javascript/this-javascript-dominando/
 const createMenu = (object) => ({
-  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#syntax
-  // https://www.w3schools.com/js/js_this.asp
-  // https://desenvolvimentoparaweb.com/javascript/this-javascript-dominando/
   fetchMenu: () => object,
   consumption: [],
   order(item) { this.consumption.push(item); },
